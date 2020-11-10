@@ -26,10 +26,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearAction(_ sender: UIButton) {
+        numberOne = ""
+        numberTwo = ""
+        operand = ""
+        resultLabel.text = "0"
     }
     
     @IBAction func inputOperand(_ sender: UIButton) {
         operand = sender.titleLabel?.text as! String
     }
     
+    @IBAction func resultAction(_ sender: Any) {
+        var result = 0.0
+        
+        
+    }
 }
