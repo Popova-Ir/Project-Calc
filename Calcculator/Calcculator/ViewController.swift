@@ -39,6 +39,19 @@ class ViewController: UIViewController {
     @IBAction func resultAction(_ sender: Any) {
         var result = 0.0
         
+        switch operand {
+        case "/":
+            result = Double(numberOne)! / Double(numberTwo)!
+        case "*":
+            result = Double(numberOne)! * Double(numberTwo)!
+        case "-":
+            result = Double(numberOne)! - Double(numberTwo)!
+        case "+":
+            result = Double(numberOne)! + Double(numberTwo)!
+        default:
+            break
+        }
         
     }
+    
 }
