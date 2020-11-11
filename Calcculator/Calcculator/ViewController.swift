@@ -51,7 +51,8 @@ class ViewController: UIViewController {
         default:
             break
         }
-        
+        if result.truncatingRemainder(dividingBy: 1.0) == 00 {resultLabel.text = String(Int(result))
+        } else { resultLabel.text = String (result)}
     }
     
 }
